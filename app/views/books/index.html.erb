@@ -1,22 +1,20 @@
-
-
-
-<!--  -->
+<!-- 一覧 -->
 <h1>Books</h1>
 
 <% @books.each do |book| %>
 
   <p>Title</p>
   <span>
-      <%= book.title %>
+    <%= book.title %>
   </span>
 
   <p>Body</p>
   <span>
-     <%= book.body %>
+    <%= book.body %>
   </span>
 
 
+<!-- リンク -->
   <span>
     <%= link_to "Show", book_path(book.id) %>
   </span>
@@ -30,10 +28,12 @@
 　</td>
 <% end %>
 
+
+<!-- 新規 -->
 <h1>New book</h1>
 
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>件のエラーが発生しました
+  <%= @book.errors.count %>error
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
