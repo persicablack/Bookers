@@ -1,3 +1,7 @@
+
+
+
+<!--  -->
 <h1>Books</h1>
 
 <% @books.each do |book| %>
@@ -22,11 +26,20 @@
 　</td>
 　
 　<td>
-　  <%= link_to "Destroy", destroy_book_path(book.id), method: :delete, data: { confirm: "Are you sure?" } %>
+　  <%= link_to "Destroy", book_path(book.id), method: :delete, data: { confirm: "Are you sure?" } %>
 　</td>
 <% end %>
 
 <h1>New book</h1>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 
 <%= form_with model: @book do |f| %>
 
