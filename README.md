@@ -1,24 +1,39 @@
-# README
+# Bookers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bookers is a web application developed in Ruby on Rails.  
+It allows you to browse a list of various books and post titles and impressions about them.
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+Bookers has the following features.
 
-* System dependencies
+- Book posting, editing, and deleting functions
+- Book details page viewing function
 
-* Configuration
+### Environment
 
-* Database creation
+Bookers has been tested in the following environment.
 
-* Database initialization
+- Ruby 3.1.2p20
+- Ruby on Rails 6.1.7.3
 
-* How to run the test suite
+-----
 
-* Services (job queues, cache servers, search engines, etc.)
+# Bookers
 
-* Deployment instructions
+Bookersは、Ruby on Railsで開発されたWebアプリケーションです。  
+さまざまな書籍のリストを閲覧したり、タイトルや感想を投稿することができます。
 
-* ...
+### 機能
+
+Bookersには、以下のような機能があります。
+
+- 書籍投稿・編集・削除機能
+- 書籍の詳細ページ閲覧機能
+
+### 環境
+
+Bookersは、以下の環境で動作確認しています。
+
+- Ruby 3.1.2p20
+- Ruby on Rails 6.1.7.3
